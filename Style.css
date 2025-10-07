@@ -1,0 +1,463 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+  background-image: url(Sweethedges-farm-uk.jpg);
+  height: fit-content;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  line-height: 1.5;
+}
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+p {
+  padding: 5px;
+}
+
+.container {
+  display: grid;
+}
+
+.footer_bck {
+  width: 100%;
+  height: 200px;
+  color: beige;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container_form {
+  border-radius: 30px;
+  background-color: lab(77.86% -21.36 35.09);
+  padding: 20px;
+  width: 50%;
+}
+
+.Header_Block {
+  font-family: 'Poppins', sans-serif;
+  margin-top: 40px;
+  font-size: 40pt;
+  color: aliceblue;
+  display: block;
+  background-color: lab(77.86% -21.36 35.09);
+  width: 1000px;
+  border-radius: 30px;
+  text-decoration: none;
+}
+
+.text {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20pt;
+  color: aliceblue;
+  display: block;
+  background-color: lab(77.86% -21.36 35.09);
+  width: 55%;
+  border-radius: 30px;
+  text-decoration: none;
+  float: left;
+  margin-left: 5%;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  grid-row: 1;
+}
+
+label {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20pt;
+  color: aliceblue;
+}
+
+.container_menu {
+  display: grid;
+  gap: 1px;
+}
+
+.text_menu {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20pt;
+  color: aliceblue;
+  display: block;
+  background-color: lab(77.86% -21.36 35.09);
+  width: 500px;
+  border-radius: 30px;
+  text-decoration: none;
+  float: left;
+  grid-row: 1;
+  margin-left: 10%;
+  text-align: center;
+  padding: 5px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.text_pitch {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20pt;
+  color: aliceblue;
+  display: block;
+  background-color: lab(77.86% -21.36 35.09);
+  width: 500px;
+  border-radius: 30px;
+  text-decoration: none;
+  float: left;
+  grid-row: 1;
+  margin-left: 20%;
+  text-align: center;
+  padding: 5px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.contact {
+  font-family: 'Poppins', sans-serif;
+}
+
+.embed {
+  display: flex;
+  position: relative;
+  float: right;
+  grid-column: 3;
+  grid-row: 1;
+  margin-top: 25px;
+  margin-right: 5%;
+  border-radius: 5%;
+  border: #24262b;
+  border-width: 2px;
+
+  height: 400px;
+  width: 600px;
+}
+
+.embed_img {
+  display: flex;
+  position: relative;
+  float: right;
+  grid-column: 3;
+  grid-row: 1;
+  margin-top: 100px;
+  margin-right: 5%;
+  border-radius: 5%;
+  border: #24262b;
+  border-width: 2px;
+
+  height: 600px;
+  width: 700px;
+}
+
+.navbar {
+  width: 92%;
+  background-color: lab(77.86% -21.36 35.09);
+  overflow: auto;
+  border-radius: 50px;
+  position: sticky;
+  height: 8%;
+  padding: 6px;
+  list-style-type: none;
+  margin-left: 4%;
+  margin-right: 4%;
+}
+
+/* Navbar links */
+.navbar li {
+  list-style: none;
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  display: inline-block;
+  padding: 30px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar a {
+  color: aliceblue;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+/* Navbar links on mouse-over */
+.navbar li:hover {
+  border-radius: 5%;
+  background-color: lab(88.82% -17.03 26.97);
+}
+
+.logo {
+    padding: 6px;
+    border-radius: 50%;
+    width: 120px;
+    float: left;
+}
+
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+@media screen and (max-width: 700px) {
+  .navbar li {
+    float: none;
+    display: block;
+  }
+  .logo {
+    visibility: hidden;
+    position: absolute;
+  }
+  .Header_Block {
+    font-size: 15pt;
+    width: 500px;
+  }
+  .text {
+    float: none;
+    align-self: center;
+    width: 90%;
+    margin-left: 5%;
+  }
+  .text_menu {
+    float: none;
+    margin-top: 4%;
+  }
+  .container_menu {
+    display: block;
+  }
+  .container {
+    display: block;
+  }
+  .embed_img {
+    height: 250px;
+    width: 250px;
+    float: none;
+    grid-column: none;
+    grid-row: none;
+  }
+  .embed {
+    align-self: center;
+    width: 90%;
+  }
+  .text_pitch {
+    float: left;
+    margin-left: 5px;
+    margin-top: 50px;
+  }
+  .container_form {
+    margin-top: 1250px;
+    width: 90%;
+  }
+  .slideshow-container {
+    display: flex;
+    align-items: center;  /* vertical centering */
+    height: 100vh;        /* full viewport height */
+    /* Optional: */
+  }
+
+
+}
+
+@media  screen and (max-width: 1600px) {
+  .text {
+    float: none;
+    align-self: center;
+    width: 90%;
+  }
+  .video_embed {
+    float: none;
+    display: flex;
+    align-self: center;
+    margin-right: 0%;
+    padding-right: 0%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .container_menu {
+    width: 100%;
+    align-items: center; /* Centers items vertically */
+    margin: auto; /* Centers the grid itself */
+  }
+  /* .text_menu {
+    margin-top: 10px;
+    margin-left: 5%;
+  } */
+}
+
+/*Navbar stuff*/
+
+
+
+
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: lab(77.86% -21.36 35.09);
+  padding: 70px 0;
+  box-shadow: 10px 0 5px -2px lab(77.86% -21.36 35.09);
+}
+
+.social {
+  display: inline-block;
+  overflow: auto;
+  list-style-type: none;
+  list-style: none;
+}
+
+.icon {
+  width: 10%;
+  border-radius: 50%;
+}
+
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+  font-family: 'Poppins', sans-serif;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: aliceblue;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	display: block;
+	transition: all 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+
+.footer-col p {
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 300;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-col .social-links a:hover{
+	color: #24262b;
+  display: block;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+.slideshow-container {
+  display: flex;
+  position: relative;
+  float: right;
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.slideshow-container-fish {
+  display: flex;
+  position: relative;
+  float: right;
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.slide {
+  display: none;
+}
+
+img {
+  vertical-align: middle;
+  width: 100%;
+  height: auto;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
