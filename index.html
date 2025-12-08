@@ -1,75 +1,182 @@
 <!DOCTYPE html>
-<html>
-    <link rel="stylesheet" href="Style.css">
-    <head>
-        <br>
-        <div class="navbar">
-            <img class="logo" src="d58553_9811172b8d1a41ba9480199940e831f3~mv2.png" alt="Logo">
-            <li><a href = "index.html">Home</a></li>
-            <li><a href = "Aboutus.html">About Us</a></li>
-            <li><a href = "Tearooms.html">Tearooms</a></li>
-            <li><a href = "Fishing.html">Fishing</a></li>
-            <li><a href = "Caravan.html">caravan Park</a></li>
-        </div>
-    </head>
-    <body>
-        <center><div class="Header_Block"><h1>Welcome to Sweethedges!</h1></div></center>
-        <br>
-        <br>
-        <section class="Containter">
-            <div class="text">
-                <p>Sweethedges is a charming and historic location nestled in the heart of England, offering visitors a unique blend of natural beauty and cultural heritage. Known for its picturesque landscapes, mature woodlands, and tranquil pathways, Sweethedges provides an idyllic setting for outdoor enthusiasts, nature lovers, and those seeking a peaceful retreat. Rich in history, the site reflects the region's traditional English countryside ambiance, with opportunities for walking, wildlife spotting, and enjoying seasonal changes. Whether you're exploring its scenic trails or simply soaking in the serene environment, Sweethedges is a perfect destination to connect with nature and experience the timeless charm of rural England.</p>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busy-Bees Home</title>
+    <link rel="stylesheet" href="style.css?v=2">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+    <nav style="border-bottom: 2px solid black;" class="navbar sticky-top navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img style="width: 40px;" src="Resources/Logo.png" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul style="color: #52AC60;" class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About Us/">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contact Us/">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Our Services/">Our Services</a>
+                    </li>
+                </ul>
             </div>
-            <center><iframe class="embed" width="560" height="315" src="https://www.youtube.com/embed/hCeDjJkqIYE?si=UDdFIYgkC4FINSgp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></center> 
-        </section>
-    </body>
+        </div>
+    </nav>
+    <div class="hero">
+        <div style="margin-left: 40px; margin-right: 40px;">
+            <h1 style="font-weight: 400; color: white; margin-top: 200px;" class="display-1">Welcome To Busy-Bees Gardening Services!</h1>
+            <p style="color: white;">The premium choice for female run gardening services.</p>
+            <div class="container mt-4">
+                <button id="contact_btn" style="background-color: #52AC60; color: white; font-size: 20pt;"  type="button" class="btn btn-success">Contact Us</button>
+                <button id="about_btn" style="background-color: #52AC60; color: white; font-size: 20pt;" type="button" class="btn btn-success">About Us</button>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <!-- <img class="Background_home" src="Resources/bg_test.png" width="100%"> -->
+    </div>
     <br>
+    <center><h2 style="margin-top: -100px; font-weight: 200;" class="display-2">FAQ:</h2></center>
+    <div style="margin-left: 40px; margin-right: 40px;" class="accordion" id="accordionExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button text-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Why choose us?
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    We provide high quality garden services ensuring your garden needs are satisfied with services ranging from a simple clean up all the way to a complete makeover. We take pride in our work always ensuring every garden is well kept at an unbeatable price.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Do you work all year round?
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    No, we dont work through the winter months however we restart our work in February and work through to November.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    How much do you charge?
+                </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>Rates:</strong><br><br>
+                    <strong>Hourly rate: </strong>£20<br>
+                    <strong>Daily rate: </strong>£150<br><br>
+                    <strong>Service rates:</strong><br><br>
+                    <strong>Maintance: </strong>Hourly rate<br>
+                    <strong>Overhaul: </strong>Daily rate + Supplies
+                </div>
+            </div>
+        </div>
+    </div>
+    <center><h2 style="font-weight: 200; margin-top: 20px; margin-bottom: 30px;" class="display-2">Who are we for?</h2></center>
+    <center><p style="margin-left: 40px; margin-right: 40px; font-size: 15pt;">We are a female run gardening service specialising in garden services for people who would prefer a female working on their gardens! <br> 
+        We exist to fill a gap in the market for people who prefer a female contractor to be working on their property as many people see females as less threatning than male workers either through past experiences or personal preferance. <br>
+        We offer competitive pricing on various services ranging from but not limited to; Site maintance, Water feature care and installation, Fence care and installation, Patio installation and flower bed care.
+    </p></center>
+
+    <center><h2 style="font-weight: 200; margin-top: 20px; margin-bottom: 30px;" class="display-2">Our services?</h2></center>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card text-center mb-3">
+                    <div class="card-body">
+                    <h5 class="card-title">Maintance</h5>
+                    <p class="card-text">This can range from a simple clean up to fence repair/replacement.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-center mb-3">
+                    <div class="card-body">
+                    <h5 class="card-title">Water Features</h5>
+                    <p class="card-text">One of our best services is installing water features and we take pride in the quality of the service</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-center mb-3">
+                    <div class="card-body">
+                    <h5 class="card-title">Grass care</h5>
+                    <p class="card-text">One of our most requested services is grass care, whether just a mow or replanting a dead spot of grass to replacing it.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <br>
+    <center><button id="about_btn" type="button" class="btn btn-outline-success">Find out more!</button></center>
     <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <footer class="footer">
-  	 <div class="container">
-  	 	<div class="row">
-  	 		<div class="footer-col">
-                <h4>Tabs</h4>
-                <ul>
-                    <li><a href = "index.html">Home</a></li>
-                    <li><a href = "Aboutus.html">About Us</a></li>
-                    <li><a href = "Tearooms.html">Tearooms</a></li>
-                    <li><a href = "Fishing.html">Fishing</a></li>
-                    <li><a href = "Caravan.html">caravan Park</a></li>
-                </ul>
-  	 		</div>
-  	 		<div class="footer-col">
-  	 			<h4>Contact details</h4>
-                <p>Phone number: 01572 717398</p>
-                <p>Email: sweethedgesfarm@gmail.com</p>
-                <p>Address: Allexton Road, Stockerston, Leicestershire, LE15 9AD</p>
-  	 		</div>
-            <div class="footer-col">
-                <h4>follow us</h4>
-                <ul>
-                    <li><a href="https://www.tripadvisor.co.uk/Restaurant_Review-g7248642-d7246063-Reviews-Sweethedges_Farm_Tea_Rooms-Stockerston_Leicestershire_England.html"><img class="icon" src="Trip Advisor.png" alt=""></a></li>
-                    <li><a href = "https://www.facebook.com/Sweethedgesfarm/info?tab=page_info"><img class="icon" src="Facebook.png" alt=""></a></li>
-                </ul>
-  	 		</div>
-  	 	</div>
+
+    <footer class="text-center bg-body-tertiary">
+        <!-- Grid container -->
+        <div class="container pt-4">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+            <!-- Facebook -->
+            <a
+                data-mdb-ripple-init
+                class="btn btn-link btn-floating btn-lg text-body m-1"
+                href="#!"
+                role="button"
+                data-mdb-ripple-color="dark"
+                ><img class="fab fa-facebook-f" src="Resources/facebook.png" width="40px"></img
+            ></a>
+            <!-- Instagram -->
+            <a
+                data-mdb-ripple-init
+                class="btn btn-link btn-floating btn-lg text-body m-1"
+                href="#!"
+                role="button"
+                data-mdb-ripple-color="dark"
+                ><img class="fab fa-instagram" src="Resources/instagram.png" width="40px"></img
+            ></a>
+
+            </section>
+            <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2025 Copyright:
+            <a class="text-body" href="https://github.com/Patjag08">Github.com/Patjag08</a>
+        </div>
+        <!-- Copyright -->
     </footer>
+    <script>
+        document.getElementById("about_btn").onclick = function () {
+            window.location.href = "About Us/";
+        };
+        document.getElementById("contact_btn").onclick = function () {
+            window.location.href = "About Us/";
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
 </html>
