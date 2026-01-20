@@ -16,5 +16,6 @@ CREATE TABLE past_Jobs (
 CREATE TABLE staff_Accounts (
   staff_id INT AUTO_INCREMENT PRIMARY KEY,
   staff_user VARCHAR(255),
+  staff_email VARCHAR(255),
   staff_password VARCHAR(255)
 );
